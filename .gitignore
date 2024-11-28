@@ -20,4 +20,4 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
-.DS_STORE
+.DS_Store
