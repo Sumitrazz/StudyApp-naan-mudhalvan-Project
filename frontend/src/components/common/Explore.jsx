@@ -26,7 +26,7 @@ const Explore = () => {
     {
       title: "Code Colours for Teachers",
       description: "Create colour-coordinated schedules for your teaching staff to more easily identify upcoming lessons, and overloaded schedules.",
-      icon: "🎨",
+      icon: "🎨", 
     },
     {
       title: "Group Booking",

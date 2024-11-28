@@ -30,7 +30,7 @@ const AboutEducation = () => {
       <section className="aboutHome">
         <div className="container flexSB">
           <div className="left row">
-            <img src="./images/about.webp" alt="About Us" />
+            {/* <img src="./images/about.webp" alt="About Us" /> */}
           </div>
           <div className="right row">
             <div className="heading">

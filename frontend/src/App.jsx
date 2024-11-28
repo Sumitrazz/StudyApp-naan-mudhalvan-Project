@@ -62,7 +62,7 @@ function App() {
             
           </div>
           {/* Add Explore component here */}
-          <Explore />
+         {/* <Explore /> */}
           <AboutEducation/>
           
 

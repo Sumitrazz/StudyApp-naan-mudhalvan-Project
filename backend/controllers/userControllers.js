@@ -1,3 +1,4 @@
+
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
@@ -102,16 +103,26 @@ const postCourseController = async (req, res) => {
     const S_content = req.files.map((file) => file.filename); // Assuming you want to store the filenames in S_content
     // Create an array of sections
     const sections = [];
-    for (let i = 0; i < S_title.length; i++) {
-      sections.push({
-        S_title: S_title[i],
-        S_content: {
-          filename: S_content[i],
-          path: `/uploads/${S_content[i]}`,
-        },
-        S_description: S_description[i],
-      });
-    }
+    sections.push({
+      S_title: S_title,
+      S_content: {
+        filename: S_content,
+        path: `/uploads/${S_content}`,
+         },
+         S_description: S_description,
+       });
+     
+
+    // for (let i = 0; i < S_title.length; i++) {
+    //   sections.push({
+    //     S_title: S_title[i],
+    //     S_content: {
+    //       filename: S_content[i],
+    //       path: `/uploads/${S_content[i]}`,
+    //     },
+    //     S_description: S_description[i],
+    //   });
+    // }
     if (C_price == 0) {
       price = "free";
     } else {
